@@ -103,30 +103,125 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="69.642857142857139"/>
         </scene>
-        <!--Landing View Controller-->
-        <scene sceneID="CJx-3V-lol">
+        <!--Fav-->
+        <scene sceneID="GWa-dv-VbY">
             <objects>
-                <viewController storyboardIdentifier="LandingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DZ8-AK-fBI" customClass="LandingViewController" customModule="frist" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T2N-yQ-MQU">
+                <viewController id="vSp-CT-EdJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eoa-0U-7pT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="ek9-Gb-m3c"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="SP1-ei-sx3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <viewLayoutGuide key="safeArea" id="Chc-9F-scX"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XqJ-qe-TWx"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eYd-Jd-uiF"/>
+                    <tabBarItem key="tabBarItem" title="Fav" image="star" catalog="system" id="z5G-aE-H8J"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MuG-i1-n6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPF-TP-sBq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="987" y="70"/>
+            <point key="canvasLocation" x="141" y="892"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="hIw-Xt-ztf">
+            <objects>
+                <viewController storyboardIdentifier="homeViewController" id="KyS-SA-Wv9" customClass="homeViewController" customModule="frist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rlg-DF-Kuf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AB7-iK-zWS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="159" id="KBu-YE-IL0" customClass="dataTableViewCell" customModule="frist" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="159"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBu-YE-IL0" id="jJF-bP-wrl" customClass="UITableViewCell">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-sN-Hvc">
+                                                    <rect key="frame" x="20" y="11" width="374" height="137"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ckf-sN-Hvc" firstAttribute="top" secondItem="jJF-bP-wrl" secondAttribute="topMargin" id="KUs-V8-yrd"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ckf-sN-Hvc" secondAttribute="bottom" id="LDj-FW-3fv"/>
+                                                <constraint firstItem="ckf-sN-Hvc" firstAttribute="leading" secondItem="jJF-bP-wrl" secondAttribute="leadingMargin" id="e9T-FC-GaE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ckf-sN-Hvc" secondAttribute="trailing" id="wYs-w9-nOY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="location" destination="ckf-sN-Hvc" id="oxD-4M-EwM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dyB-JF-N3g"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="dyB-JF-N3g" firstAttribute="trailing" secondItem="AB7-iK-zWS" secondAttribute="trailing" id="N4o-3Y-woC"/>
+                            <constraint firstItem="AB7-iK-zWS" firstAttribute="leading" secondItem="dyB-JF-N3g" secondAttribute="leading" id="YZ7-3h-Ssd"/>
+                            <constraint firstItem="dyB-JF-N3g" firstAttribute="bottom" secondItem="AB7-iK-zWS" secondAttribute="bottom" id="aD2-1l-mDb"/>
+                            <constraint firstItem="AB7-iK-zWS" firstAttribute="top" secondItem="dyB-JF-N3g" secondAttribute="top" id="uof-rA-jKS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="zXd-jJ-ehW"/>
+                    <connections>
+                        <outlet property="tableview" destination="AB7-iK-zWS" id="3Bj-db-5bK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rir-cz-EoP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.5942028985507" y="891.96428571428567"/>
+        </scene>
+        <!--Tab Controller-->
+        <scene sceneID="FWf-6L-IDB">
+            <objects>
+                <tabBarController storyboardIdentifier="tabController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iJE-3E-49g" customClass="tabController" customModule="frist" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RAj-DA-Lsk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KyS-SA-Wv9" kind="relationship" relationship="viewControllers" id="1BY-xX-RDE"/>
+                        <segue destination="vSp-CT-EdJ" kind="relationship" relationship="viewControllers" id="pGc-31-dlE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvK-uU-w93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1778" y="70"/>
         </scene>
     </scenes>
     <resources>
         <image name="diamond" width="343" height="251"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

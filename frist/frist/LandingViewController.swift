@@ -9,8 +9,12 @@ import UIKit
 
 class LandingViewController: UIViewController {
 
+    @IBOutlet weak var emailtxt: UILabel!
+    var email=""
     override func viewDidLoad() {
         super.viewDidLoad()
+      //  emailtxt.text=email
+        
 
         // Do any additional setup after loading the view.
     }
