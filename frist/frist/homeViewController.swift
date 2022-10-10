@@ -1,20 +1,16 @@
 //
-//  LandingViewController.swift
+//  homeViewController.swift
 //  frist
 //
-//  Created by ARM 097 on 06/10/22.
+//  Created by ARM 097 on 10/10/22.
 //
 
 import UIKit
 
-class LandingViewController: UIViewController {
+class homeViewController: UITabBarController {
 
-    @IBOutlet weak var emailtxt: UILabel!
-    var email=""
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailtxt.text=email
-        
 
         // Do any additional setup after loading the view.
     }
