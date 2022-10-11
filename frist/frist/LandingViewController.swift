@@ -13,7 +13,7 @@ class LandingViewController: UIViewController {
     var email=""
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailtxt.text=email
+      //  emailtxt.text=email
         
 
         // Do any additional setup after loading the view.
