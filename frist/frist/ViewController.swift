@@ -27,8 +27,11 @@ class ViewController: UIViewController {
     @IBAction func didPressLogin(_ sender: Any) {
         if  emailFeild.text == "tom@email.com" && passwordField.text == "hello"{
             let st = UIStoryboard(name: "Main", bundle: nil)
-           if  let viewcontroller  = st.instantiateViewController(withIdentifier: "LandingViewController") as? LandingViewController {
-                self.navigationController?.pushViewController(viewcontroller, animated: false)
+           if  let viewcontroller  = st.instantiateViewController(withIdentifier: "tabController") as? tabController {
+          
+          // var em = emailFeild.text
+                //viewcontroller.email  = em ?? ""
+            self.navigationController?.pushViewController(viewcontroller, animated: false)
             }
         
         }
