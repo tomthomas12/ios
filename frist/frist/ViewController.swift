@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  frist
 //
-//  Created by ARM 097 on 03/10/22.
+//  Created by ARM 097 on 11/10/22.
 //
 
 import UIKit
@@ -16,15 +16,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var loginIndicator: UIActivityIndicatorView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    }
+        func didPressLogin(_ sender: Any) {
+
+        }
         
-        
-        
-    }	
-    @IBAction func didPressLogin(_ sender: Any) {
+    @IBAction func login(_ sender: Any) {
         if  emailFeild.text == "tom" && passwordField.text == "hey"{
             let st = UIStoryboard(name: "Main", bundle: nil)
            if  let viewcontroller  = st.instantiateViewController(withIdentifier: "tabController") as? tabController {
@@ -42,4 +41,9 @@ class ViewController: UIViewController {
         }
     }
 }
+
+
+    
+    
+
 

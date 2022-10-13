@@ -20,7 +20,7 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell=tableview.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)  as!  ListTableViewCell
+        let cell=tableview.dequeueReusableCell(withIdentifier: "ListTableViewCell", for: indexPath)  as!  ListTableViewCell
         cell.backgroundColor = .blue
         
         cell.location?.text=models[indexPath.row]
@@ -38,8 +38,12 @@ class homeViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let nib=UINib(nibName: "ListTableViewCell", bundle: nil)
         tableview.register(nib, forCellReuseIdentifier: "ListTableViewCell")
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableview.deselectRow(at: indexPath, animated:true)
+        let storyboard  = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "favViewController") as! favViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
-  
-    
-
 }
+
