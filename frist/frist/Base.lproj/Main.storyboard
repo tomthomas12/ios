@@ -236,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="1894" y="892"/>
         </scene>
-        <!--Item-->
+        <!--Movie-->
         <scene sceneID="nxE-W2-LtB">
             <objects>
                 <viewController storyboardIdentifier="MlistingViewController" id="Rny-NJ-Aio" customClass="MlistingViewController" customModule="frist" customModuleProvider="target" sceneMemberID="viewController">
@@ -269,15 +269,48 @@
                             <constraint firstItem="BT0-qa-h9K" firstAttribute="leading" secondItem="3fI-zN-wZ0" secondAttribute="leading" constant="10" id="q6Q-Gk-yn7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="esP-3F-WUk"/>
+                    <tabBarItem key="tabBarItem" title="Movie" image="folder" catalog="system" id="esP-3F-WUk"/>
                     <connections>
                         <outlet property="field" destination="VDh-qE-8jv" id="kyF-7x-fEc"/>
-                        <outlet property="table" destination="BT0-qa-h9K" id="JN1-lR-vr8"/>
+                        <outlet property="table" destination="BT0-qa-h9K" id="XAZ-cH-g7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="et4-ao-djN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2663.768115942029" y="912.72321428571422"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="eQy-8A-Ojc">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="tTl-w4-MRs" customClass="ProfileViewController" customModule="frist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Nd-PD-VYP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Svo-8h-3jn">
+                                <rect key="frame" x="57" y="108" width="299" height="68"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <state key="normal" title="LOG OUT"/>
+                                <connections>
+                                    <action selector="logoutUser:" destination="tTl-w4-MRs" eventType="touchUpInside" id="fbs-DU-BJT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F2Q-J2-PQe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Svo-8h-3jn" firstAttribute="top" secondItem="F2Q-J2-PQe" secondAttribute="top" constant="64" id="EN1-hd-k4P"/>
+                            <constraint firstItem="F2Q-J2-PQe" firstAttribute="bottom" secondItem="Svo-8h-3jn" secondAttribute="bottom" constant="637" id="Fra-Cf-DTN"/>
+                            <constraint firstItem="F2Q-J2-PQe" firstAttribute="trailing" secondItem="Svo-8h-3jn" secondAttribute="trailing" constant="58" id="eJA-7w-RPx"/>
+                            <constraint firstItem="Svo-8h-3jn" firstAttribute="leading" secondItem="F2Q-J2-PQe" secondAttribute="leading" constant="57" id="yl2-aP-FkR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="ctQ-0k-BwB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8P-WA-w4N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3585.507246376812" y="912.72321428571422"/>
         </scene>
         <!--Tab Controller-->
         <scene sceneID="FWf-6L-IDB">
@@ -291,6 +324,7 @@
                     <connections>
                         <segue destination="gj7-MT-SiQ" kind="relationship" relationship="viewControllers" id="ARZ-Nr-a19"/>
                         <segue destination="Rny-NJ-Aio" kind="relationship" relationship="viewControllers" id="3m4-Ki-Tm1"/>
+                        <segue destination="tTl-w4-MRs" kind="relationship" relationship="viewControllers" id="m8W-8S-Ugl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvK-uU-w93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,7 +335,9 @@
     <resources>
         <image name="agentsOfShield" width="490" height="680"/>
         <image name="diamond" width="343" height="251"/>
+        <image name="folder" catalog="system" width="128" height="97"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

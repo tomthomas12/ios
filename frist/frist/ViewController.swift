@@ -18,7 +18,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var loginIndicator: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == true {
+                    let viewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "tabController") as! tabController
+            self.navigationController?.pushViewController(viewcontroller, animated: false)
+                }
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -29,6 +34,7 @@ class ViewController: UIViewController {
         
     @IBAction func login(_ sender: Any) {
         if  emailFeild.text == "tom" && passwordField.text == "hey"{
+            UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
             let st = UIStoryboard(name: "Main", bundle: nil)
            if  let viewcontroller  = st.instantiateViewController(withIdentifier: "tabController") as? tabController {
           

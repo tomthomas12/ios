@@ -20,6 +20,7 @@
 		0ECC37EC28F81A1A00C2CD73 /* MlistingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC37EB28F81A1900C2CD73 /* MlistingViewController.swift */; };
 		0ECC37F228F8244600C2CD73 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC37F028F8244600C2CD73 /* MovieTableViewCell.swift */; };
 		0ECC37F328F8244600C2CD73 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ECC37F128F8244600C2CD73 /* MovieTableViewCell.xib */; };
+		0ECC37F928F933AF00C2CD73 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECC37F828F933AF00C2CD73 /* ProfileViewController.swift */; };
 		0ED68B4628F3EA16004727F3 /* tabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED68B4528F3EA16004727F3 /* tabController.swift */; };
 		0ED68B4B28F3EF61004727F3 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED68B4A28F3EF61004727F3 /* homeViewController.swift */; };
 		0ED68B5B28F44B13004727F3 /* dataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED68B5A28F44B13004727F3 /* dataTableViewCell.swift */; };
@@ -66,6 +67,7 @@
 		0ECC37EB28F81A1900C2CD73 /* MlistingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MlistingViewController.swift; sourceTree = "<group>"; };
 		0ECC37F028F8244600C2CD73 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		0ECC37F128F8244600C2CD73 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		0ECC37F828F933AF00C2CD73 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0ED68B4528F3EA16004727F3 /* tabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabController.swift; sourceTree = "<group>"; };
 		0ED68B4A28F3EF61004727F3 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0ED68B5A28F44B13004727F3 /* dataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataTableViewCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				0ECC37EB28F81A1900C2CD73 /* MlistingViewController.swift */,
 				0ECC37F028F8244600C2CD73 /* MovieTableViewCell.swift */,
 				0ECC37F128F8244600C2CD73 /* MovieTableViewCell.xib */,
+				0ECC37F828F933AF00C2CD73 /* ProfileViewController.swift */,
 			);
 			path = frist;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				0ED68B4B28F3EF61004727F3 /* homeViewController.swift in Sources */,
 				0ED68B6128F54804004727F3 /* ListTableViewCell.swift in Sources */,
 				0ED68B5B28F44B13004727F3 /* dataTableViewCell.swift in Sources */,
+				0ECC37F928F933AF00C2CD73 /* ProfileViewController.swift in Sources */,
 				0EE9DCE028EEDEFF00E19CA0 /* secondViewController.swift in Sources */,
 				0E1EB0F028EAF50300A78C61 /* AppDelegate.swift in Sources */,
 				0ED68B6728F56ACE004727F3 /* MovieCollectionViewCell.swift in Sources */,
